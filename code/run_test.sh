@@ -14,4 +14,6 @@
 
 setting=$DATASET--radius$radius--ngram$ngram--dim$dim--layer_gnn$layer_gnn--window$window--layer_cnn$layer_cnn--lr$lr--lr_decay$lr_decay--decay_interval$decay_interval
 
-python run_training.py $DATASET $radius $ngram $dim $layer_gnn $window $layer_cnn $lr $lr_decay $decay_interval $iteration $setting
+echo $setting
+
+python run_test.py $DATASET $radius $ngram $dim $layer_gnn $window $layer_cnn $lr $lr_decay $decay_interval $iteration $setting
